@@ -1,0 +1,10 @@
+C:\Users\Jannik\Documents\GitHub\Wizard101BazaarBot\Wizard101BazaarBot\Wizard101BazaarBot\bin\Debug\Wizard101BazaarBot.exe.config
+C:\Users\Jannik\Documents\GitHub\Wizard101BazaarBot\Wizard101BazaarBot\Wizard101BazaarBot\bin\Debug\Wizard101BazaarBot.exe
+C:\Users\Jannik\Documents\GitHub\Wizard101BazaarBot\Wizard101BazaarBot\Wizard101BazaarBot\bin\Debug\Wizard101BazaarBot.pdb
+C:\Users\Jannik\Documents\GitHub\Wizard101BazaarBot\Wizard101BazaarBot\Wizard101BazaarBot\obj\Debug\Wizard101BazaarBot.csprojAssemblyReference.cache
+C:\Users\Jannik\Documents\GitHub\Wizard101BazaarBot\Wizard101BazaarBot\Wizard101BazaarBot\obj\Debug\Wizard101BazaarBot.MainForm.resources
+C:\Users\Jannik\Documents\GitHub\Wizard101BazaarBot\Wizard101BazaarBot\Wizard101BazaarBot\obj\Debug\Wizard101BazaarBot.Properties.Resources.resources
+C:\Users\Jannik\Documents\GitHub\Wizard101BazaarBot\Wizard101BazaarBot\Wizard101BazaarBot\obj\Debug\Wizard101BazaarBot.csproj.GenerateResource.cache
+C:\Users\Jannik\Documents\GitHub\Wizard101BazaarBot\Wizard101BazaarBot\Wizard101BazaarBot\obj\Debug\Wizard101BazaarBot.csproj.CoreCompileInputs.cache
+C:\Users\Jannik\Documents\GitHub\Wizard101BazaarBot\Wizard101BazaarBot\Wizard101BazaarBot\obj\Debug\Wizard101BazaarBot.exe
+C:\Users\Jannik\Documents\GitHub\Wizard101BazaarBot\Wizard101BazaarBot\Wizard101BazaarBot\obj\Debug\Wizard101BazaarBot.pdb

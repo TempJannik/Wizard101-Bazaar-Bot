@@ -42,8 +42,8 @@
             this.SaveBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.reagentXBox = new System.Windows.Forms.TextBox();
+            this.reagentYBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -153,6 +153,7 @@
             this.SaveBtn.TabIndex = 11;
             this.SaveBtn.Text = "Save";
             this.SaveBtn.UseVisualStyleBackColor = true;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // label5
             // 
@@ -172,21 +173,19 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "X: ";
             // 
-            // textBox1
+            // reagentXBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 211);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 14;
-            this.textBox1.Text = "507";
+            this.reagentXBox.Location = new System.Drawing.Point(35, 211);
+            this.reagentXBox.Name = "reagentXBox";
+            this.reagentXBox.Size = new System.Drawing.Size(100, 20);
+            this.reagentXBox.TabIndex = 14;
             // 
-            // textBox2
+            // reagentYBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(172, 211);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.Text = "273";
+            this.reagentYBox.Location = new System.Drawing.Point(172, 211);
+            this.reagentYBox.Name = "reagentYBox";
+            this.reagentYBox.Size = new System.Drawing.Size(100, 20);
+            this.reagentYBox.TabIndex = 16;
             // 
             // label7
             // 
@@ -202,9 +201,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 446);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.reagentYBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.reagentXBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.SaveBtn);
@@ -242,8 +241,8 @@
         private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox reagentXBox;
+        private System.Windows.Forms.TextBox reagentYBox;
         private System.Windows.Forms.Label label7;
     }
 }

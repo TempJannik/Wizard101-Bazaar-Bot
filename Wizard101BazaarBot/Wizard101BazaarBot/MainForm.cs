@@ -1,5 +1,4 @@
-﻿using Google.Cloud.Vision.V1;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,18 +17,43 @@ namespace Wizard101BazaarBot
 
     public partial class MainForm : Form
     {
-        
+        /*
+         Buy more button
+        X: 613
+        Y: 823
+
+        First click bar
+        X: 1095
+        Y: 616
+
+        Drag until
+        X: 1150
+
+        Buy button
+        X: 820
+        Y: 800
+
+        Ok button
+        X: 1140
+        Y: 620
+
+
+        Scroll forward: 
+        X: 1250 
+        Y: 783
+
+        Topleft Reagentlist
+        X: 780
+        Y: 375
+
+        Bottomright Reagentlist
+        X: 1137
+        Y: 750
+
+            */
         public MainForm()
         {
             InitializeComponent();
-            /*Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", @"C:\Users\Jannik\Downloads\My First Project-5ac39e1eeea6.json");
-            Google.Cloud.Vision.V1.Image img1 = Google.Cloud.Vision.V1.Image.FromFile(@"C:\Users\Jannik\Desktop\2019-10-01 18_36_21-Wizard101.png");
-            ImageAnnotatorClient client = ImageAnnotatorClient.Create();
-            IReadOnlyList<EntityAnnotation> textAnnotations = client.DetectLabels(img1);
-            foreach (EntityAnnotation text in textAnnotations)
-            {
-                Console.WriteLine($"Description: {text.Description}");
-            }*/
             LoadSettings();
             Control.CheckForIllegalCrossThreadCalls = false;
             new Thread(() => UpdateMouse()).Start();

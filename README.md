@@ -5,7 +5,7 @@ I made this in my free time and barely have time to keep it up to date, if any i
 The bot is not flawless sometimes it still bugs out or fails to recognize something.
 
 ## What does it do?
-This will automatically buy rare reagents for you. You can select which reagents you want it to search for in the Bazaar.
+This Wizard101 Bazaar Bot will automatically buy rare reagents for you. You can select which reagents you want it to search for in the Bazaar.
 
 ## How does it work?
 When starting the bot assumes you are in the reagents bazaar window. It will then proceed to refresh the reagents window and then screenshot the list of reagents. It then compares the screenshot of the list to a screenshot of the reagent you want to buy, if it is found it will buy it automatically. Afterwards it will skip to the next page and so on. Everything is based on Image Recognition and Coordinates.

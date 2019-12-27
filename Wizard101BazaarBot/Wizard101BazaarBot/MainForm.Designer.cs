@@ -35,7 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.StartBtn = new System.Windows.Forms.Button();
             this.StopBtn = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.logBox = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.xLabel = new System.Windows.Forms.Label();
             this.yLabel = new System.Windows.Forms.Label();
@@ -100,6 +100,7 @@
             this.StartBtn.TabIndex = 5;
             this.StartBtn.Text = "Start";
             this.StartBtn.UseVisualStyleBackColor = true;
+            this.StartBtn.Click += new System.EventHandler(this.StartBtn_Click);
             // 
             // StopBtn
             // 
@@ -109,14 +110,16 @@
             this.StopBtn.TabIndex = 6;
             this.StopBtn.Text = "Stop";
             this.StopBtn.UseVisualStyleBackColor = true;
+            this.StopBtn.Click += new System.EventHandler(this.StopBtn_Click);
             // 
-            // richTextBox1
+            // logBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(445, 192);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(246, 242);
-            this.richTextBox1.TabIndex = 7;
-            this.richTextBox1.Text = "";
+            this.logBox.Location = new System.Drawing.Point(445, 192);
+            this.logBox.Name = "logBox";
+            this.logBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.logBox.Size = new System.Drawing.Size(246, 242);
+            this.logBox.TabIndex = 7;
+            this.logBox.Text = "";
             // 
             // label4
             // 
@@ -210,7 +213,7 @@
             this.Controls.Add(this.yLabel);
             this.Controls.Add(this.xLabel);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.logBox);
             this.Controls.Add(this.StopBtn);
             this.Controls.Add(this.StartBtn);
             this.Controls.Add(this.label3);
@@ -219,7 +222,7 @@
             this.Controls.Add(this.selectedBox);
             this.Controls.Add(this.availableBox);
             this.Name = "MainForm";
-            this.Text = "BazaarBot";
+            this.Text = "BazaarBot by github.com/Tempodoa";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,7 +237,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button StartBtn;
         private System.Windows.Forms.Button StopBtn;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox logBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label xLabel;
         private System.Windows.Forms.Label yLabel;

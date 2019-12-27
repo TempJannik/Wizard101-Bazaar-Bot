@@ -44,5 +44,19 @@ namespace Wizard101BazaarBot
             mouse_event(MOUSEEVENTF_LEFTDOWN, x, y, 0, UIntPtr.Zero);
             mouse_event(MOUSEEVENTF_LEFTUP, x, y, 0, UIntPtr.Zero);
         }
+
+        public static void mDown(int x, int y)
+        {
+            Cursor.Position = new Point(x, y);
+            Thread.Sleep(75);
+            mouse_event(MOUSEEVENTF_LEFTDOWN, x, y, 0, UIntPtr.Zero);
+        }
+
+        public static void mDragTo(int x, int y)
+        {
+            Cursor.Position = new Point(x, y);
+            Thread.Sleep(150);
+            mouse_event(MOUSEEVENTF_LEFTUP, x, y, 0, UIntPtr.Zero);
+        }
     }
 }

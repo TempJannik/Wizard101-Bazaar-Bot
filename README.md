@@ -16,7 +16,7 @@ When starting the bot assumes you are in the reagents bazaar window. It will the
 
 ## How to install
 * Press on the Releases button
-* Click on the .rar attachment to download it
+* Click on the .rar attachment to download it or click [here](https://github.com/Tempodoa/Wizard101BazaarBot/releases/download/1.1/Release.rar)
 * Extract the rar file into any Folder
 * Start Wizard101BazaarBot.exe
 

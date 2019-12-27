@@ -26,6 +26,7 @@ When starting the bot assumes you are in the reagents bazaar window. It will the
 * Hover over the reagent button in W101, check the X and Y position of your mouse (top left of the bot), if it differs from the Reagent Position box under it change it and press Save
 * Click your wanted Reagents from the Possible Reagents window and vice versa
 * Press Start
+* Apart from the Log, finished purchases will also be in the Purchases folder!
 
 ## How to kill
 This Bot will take Control of your Mouse! For this reason you need to press **F1** to kill the bot. After being killed to restart it you must restart the Program entirely.

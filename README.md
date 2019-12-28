@@ -1,5 +1,8 @@
 # Wizard101BazaarBot
 
+[How it looks](https://i.gyazo.com/20d588d821d789c65dff8e4a60f89c12.mp4)
+
+
 ## Disclaimer
 I made this in my free time and barely have time to keep it up to date, if any issues arise either fix them yourself or create an issue on Github and I might be able to fix it eventually if your error description is sufficient.
 The bot is not flawless sometimes it still bugs out or fails to recognize something.

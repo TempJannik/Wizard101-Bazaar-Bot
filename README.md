@@ -7,6 +7,8 @@
 I made this in my free time and barely have time to keep it up to date, if any issues arise either fix them yourself or create an issue on Github and I might be able to fix it eventually if your error description is sufficient.
 The bot is not flawless sometimes it still bugs out or fails to recognize something.
 
+Depending on Feedback maybe I'll add the Treasure Card functionality to it. If you are a programmer and wish to do this feel free to do so and make a pull request.
+
 ## What does it do?
 This Wizard101 Bazaar Bot will automatically buy rare reagents for you. You can select which reagents you want it to search for in the Bazaar.
 

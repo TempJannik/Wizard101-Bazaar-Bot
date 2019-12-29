@@ -19,7 +19,7 @@ When starting the bot assumes you are in the reagents bazaar window. It will the
 
 ## How to install
 * Press on the Releases button
-* Click on the .rar attachment to download it or click [here](https://github.com/Tempodoa/Wizard101BazaarBot/releases/download/1.1/Release.rar)
+* Click on the .rar attachment to download it or click [here](https://github.com/Tempodoa/Wizard101BazaarBot/releases/download/1.2/Release.rar)
 * Extract the rar file into any Folder
 * Start Wizard101BazaarBot.exe
 
@@ -32,7 +32,7 @@ When starting the bot assumes you are in the reagents bazaar window. It will the
 * Apart from the Log, finished purchases will also be in the Purchases folder!
 
 ## How to kill
-This Bot will take Control of your Mouse! For this reason you need to press **F1** to kill the bot. After being killed to restart it you must restart the Program entirely.
+**This Bot will take Control of your Mouse!** For this reason you need to press **F1** to kill the bot.
 
 ## How to add new Reagents
 It is entirely possible that reagents don't get recognized due to differences from PC to PC. In the Folder of the program you will also find a Folder named BazaarItems. This includes the images of the Reagents. If you want to add your own you must add a screenshot of it to this folder. It will automatically be in the Possible Reagents list on your next start of the Bot. To screenshot it you can use tools like Greenshot or Lightshot
@@ -45,7 +45,6 @@ In the BazaarUtils folder are 4 Images needed for the flow of the program to fun
 
 ## Unfinished features
 * Remaining Gold
-* Stop button
 * Removing screenshots from BazaarItems folder
 
 ## Contact

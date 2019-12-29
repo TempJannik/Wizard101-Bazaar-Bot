@@ -69,7 +69,7 @@ namespace Wizard101BazaarBot
 
 
         private Thread mainThread;
-        
+        private bool debug = false;
         public MainForm()
         {
             InitializeComponent();
@@ -147,25 +147,29 @@ namespace Wizard101BazaarBot
                     }
                 }
             }*/
+            Log("Main Logic Initialized");
             while (true)//Main loop
             {
                 int counter = 1;
                 //Refresh layer
+                DebugLog("Trying to refresh Reagents (clicking X: "+ int.Parse(reagentXBox.Text) + " Y: "+ int.Parse(reagentYBox.Text) + ")");
                 WINAPI.click(int.Parse(reagentXBox.Text), int.Parse(reagentYBox.Text));
                 Cursor.Position = new Point(0,0);
                 Thread.Sleep(50);
+                DebugLog("Clicked refresh, waiting for loading to finish");
                 while (ContainsLoading(new Bitmap(Path.Combine(Directory.GetCurrentDirectory(), "BazaarUtils/isloading.png"))))
                 {
                     Thread.Sleep(1);
                 }
-
+                DebugLog("Load finished");
                 bool runAgain = true;
                 while(runAgain)
                 {
-                    //Log("Scanning page " + counter);
+                    DebugLog("Scanning page " + counter);
                     counter++;
                     foreach (var item in selectedBox.Items)
                     {
+                        DebugLog("Looking for "+item);
                         Image<Bgr, byte> source = new Image<Bgr, byte>(Recognize.makeScreen(true)); // Image B
                         Image<Bgr, byte> template = new Image<Bgr, byte>(new Bitmap(Path.Combine(Directory.GetCurrentDirectory(), "BazaarItems/" + item + ".png")).ConvertToFormat(System.Drawing.Imaging.PixelFormat.Format24bppRgb)); // Image A
 
@@ -181,20 +185,26 @@ namespace Wizard101BazaarBot
                                 Rectangle match = new Rectangle(maxLocations[0], template.Size);
                                 Log("Found " + item);
                                 WINAPI.click(match.X + 800, match.Y + 380);
+                                DebugLog("Clicked on Item");
                                 Thread.Sleep(50);
                                 BuySelected();
                             }
+                            else
+                                DebugLog("Not found");
                         }
 
                         source.Dispose();
                         template.Dispose();
                     }
                     Thread.Sleep(100);
+                    DebugLog("Checking if there are more pages");
                     if (ContainsNext(new Bitmap(Path.Combine(Directory.GetCurrentDirectory(), "BazaarUtils/nextpagegray.png"))))
                     {
+                        DebugLog("This was the last page");
                         runAgain = false;
                     }else
                     {
+                        DebugLog("Found another page, clicking to hardcoded Position");
                         WINAPI.click(1250, 780);
                         Cursor.Position = new Point(0, 0);
                         Thread.Sleep(50);
@@ -293,6 +303,7 @@ namespace Wizard101BazaarBot
                 if (GetAsyncKeyState(0x70) != 0)
                 {
                     mainThread.Abort();
+                    mainThread = new Thread(() => Main());
                 }
             }
         }
@@ -328,6 +339,16 @@ namespace Wizard101BazaarBot
             logBox.Text += "\n[" + DateTime.Now.ToLongTimeString() + "]  " + message;
             logBox.SelectionStart = logBox.Text.Length;
             logBox.ScrollToCaret();
+        }
+
+        private void DebugLog(string message)
+        {
+            if(debug)
+            {
+                logBox.Text += "\n[" + DateTime.Now.ToLongTimeString() + "D]  " + message;
+                logBox.SelectionStart = logBox.Text.Length;
+                logBox.ScrollToCaret();
+            }
         }
 
         private bool NextPage()
@@ -372,12 +393,12 @@ namespace Wizard101BazaarBot
                 // You can try different values of the threshold. I guess somewhere between 0.75 and 0.95 would be good.
                 if (maxValues[0] > 0.85)
                 {
-                    Log("Found ok button at X: "+maxLocations[0].X + " Y: "+maxLocations[0].Y);
+                    DebugLog("Found ok button at X: "+maxLocations[0].X + " Y: "+maxLocations[0].Y);
                     // This is a match. Do something with it, for example draw a rectangle around it.
                     Rectangle match = new Rectangle(maxLocations[0], template.Size);
                     WINAPI.click(match.X, match.Y);
                     Thread.Sleep(50);
-                    Log("Clicked ok button");
+                    DebugLog("Clicked ok button");
                 }
                 else
                 {
@@ -397,7 +418,7 @@ namespace Wizard101BazaarBot
 
         private void StopBtn_Click(object sender, EventArgs e)
         {
-            Log("this is a log message!");
+            //Log("this is a log message!");
             //BuySelected();  
         }
 
@@ -409,6 +430,18 @@ namespace Wizard101BazaarBot
             }else
             {
                 mainThread.Start();
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            debug = !debug;
+            if(debug)
+            {
+                button1.Text = "Turn off Debug Mode";
+            }else
+            {
+                button1.Text = "Turn on Debug Mode";
             }
         }
     }

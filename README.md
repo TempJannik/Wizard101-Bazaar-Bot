@@ -24,7 +24,7 @@ When starting the bot assumes you are in the reagents bazaar window. It will the
 * Start Wizard101BazaarBot.exe
 
 ## How to use
-* Put your game on windowed mode, 1920x1080 with High Graphic settings
+* Put your game into Fullscreen 1920x1080, Press Alt + Enter, your screen should now look like [this](https://gyazo.com/90b5f8e334bbd9eb1ebb0173236325fd)
 * Go into the Bazaar, to the Reagents section
 * Hover over the reagent button in W101, check the X and Y position of your mouse (top left of the bot), if it differs from the Reagent Position box under it change it and press Save
 * Click your wanted Reagents from the Possible Reagents window and vice versa

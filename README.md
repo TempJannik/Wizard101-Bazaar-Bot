@@ -1,6 +1,6 @@
 # Wizard101BazaarBot
 
-[How it looks](https://i.gyazo.com/20d588d821d789c65dff8e4a60f89c12.mp4)
+[Demonstration](https://www.youtube.com/watch?v=_g9PX2u_CeU&feature=youtu.be)
 
 
 ## Disclaimer

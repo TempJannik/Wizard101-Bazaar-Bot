@@ -17,6 +17,7 @@ When starting the bot assumes you are in the reagents bazaar window. It will the
 
 ## Requirements
 * .Net Framework: This Project is in C# so it requires the .Net Framework. This is included in most Windows Installations but if it is not there you can download it from [here](https://www.microsoft.com/de-de/download/details.aspx?id=55170)
+**You need version 4.7.2 or higher!**
 * 1080p Monitor: As the project relies on image recognition, if your monitor has less than 1080p Pixels or if your game isnt set to 1920x1080 the pixels will differ rendering the bot useless.
 
 ## How to install

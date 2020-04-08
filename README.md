@@ -1,7 +1,7 @@
 # Wizard101BazaarBot
 
 [Demonstration](https://www.youtube.com/watch?v=_g9PX2u_CeU&feature=youtu.be)
-
+[TC Version](https://www.youtube.com/watch?v=6Sdze_Bp9Q8) <- Please note this version is not public. This repository is only for Reagents. But this shows you how it can be done and maybe give some tips as well.
 
 ## Disclaimer
 I made this in my free time and barely have time to keep it up to date, if any issues arise either fix them yourself or create an issue on Github and I might be able to fix it eventually if your error description is sufficient.

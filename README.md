@@ -52,4 +52,4 @@ In the BazaarUtils folder are 4 Images needed for the flow of the program to fun
 * Removing screenshots from BazaarItems folder
 
 ## Contact
-Discord: Temp#0712
+Discord: Temp#9999

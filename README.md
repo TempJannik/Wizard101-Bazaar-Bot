@@ -1,6 +1,6 @@
 # Wizard101BazaarBot
 
-[Demonstration](https://www.youtube.com/watch?v=_g9PX2u_CeU&feature=youtu.be)
+[TC Version here](https://github.com/TempJannik/Wizard101-TC-Bazaar-Bot)
 
 ## Disclaimer
 I made this in my free time and barely have time to keep it up to date, if any issues arise either fix them yourself or create an issue on Github and I might be able to fix it eventually if your error description is sufficient.

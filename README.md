@@ -1,7 +1,5 @@
 # Wizard101BazaarBot
 
-[TC Version here](https://github.com/TempJannik/Wizard101-TC-Bazaar-Bot)
-
 ## Disclaimer
 I made this in my free time and barely have time to keep it up to date, if any issues arise either fix them yourself or create an issue on Github and I might be able to fix it eventually if your error description is sufficient.
 The bot is not flawless sometimes it still bugs out or fails to recognize something.
